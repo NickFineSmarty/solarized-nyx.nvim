@@ -36,7 +36,7 @@ function M.setup()
     Directory = { fg = c.blue500 }, -- directory names (and other special names in listings)
     DiffAdd = { fg = c.green500, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
     DiffChange = { fg = c.yellow500, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
-    DiffDelete = { fg = c.red500, bg = c.base02, bold = true }, -- diff mode: Deleted line |diff.txt|
+    DiffDelete = { fg = c.blue700, bg = c.base02, bold = true }, -- diff mode: Deleted line |diff.txt|
     DiffText = { fg = c.blue500, bg = c.base02, bold = true }, -- diff mode: Changed text within a changed line |diff.txt|
     EndOfBuffer = { fg = c.base01 }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     -- TermCursor  = { }, -- cursor in a focused terminal
@@ -73,7 +73,7 @@ function M.setup()
     IncSearch = { fg = c.blue900, standout = true }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch = { link = "IncSearch" },
     SpecialKey = { fg = c.base00 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
-    SpellBad = { sp = c.red500, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+    SpellBad = { sp = c.blue500, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap = { sp = c.violet500, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal = { sp = c.cyan500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare = { sp = c.yellow500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
@@ -82,7 +82,7 @@ function M.setup()
     TabLine = { fg = c.base0, bg = c.base02, sp = c.base0 }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.base0, bg = c.base02 }, -- tab pages line, where there are no labels
     TabLineSel = { fg = c.yellow500, bg = c.bg }, -- tab pages line, active tab page label
-    Title = { fg = c.orange500, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
+    Title = { fg = c.blue700, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { bg = c.base03, reverse = true }, -- Visual mode selection
     VisualNOS = { bg = c.base03, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg = { fg = c.orange500, bold = true }, -- warning messages
@@ -215,11 +215,11 @@ function M.setup()
     --- Literals
     ["@string.documentation"] = { fg = c.cyan500 },
     ["@string.regex"] = { fg = c.cyan300 }, -- For regexes.
-    ["@string.escape"] = { fg = c.orange700 }, -- For escape characters within a string.
+    ["@string.escape"] = { fg = c.blue700 }, -- For escape characters within a string.
 
     --- Functions
-    ["@constructor"] = { fg = c.orange500 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-    ["@parameter"] = { fg = c.orange500 }, -- For parameters of a function.
+    ["@constructor"] = { fg = c.blue500 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ["@parameter"] = { fg = c.blue500 }, -- For parameters of a function.
     -- TODO:
     -- ["@parameter.builtin"] = {}, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -241,14 +241,14 @@ function M.setup()
     ["@variable.builtin"] = { fg = c.blue700 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
-    ["@text.literal.markdown"] = { fg = c.red500 },
+    ["@text.literal.markdown"] = { fg = c.blue500 },
     ["@text.literal.markdown_inline"] = { fg = c.yellow500, bg = c.green900 },
     ["@text.reference"] = { fg = c.blue500, underline = true },
 
     ["@text.todo.unchecked"] = { fg = c.yellow500 }, -- For brackets and parens.
     ["@text.todo.checked"] = { fg = c.green500 }, -- For brackets and parens.
     ["@text.warning"] = { fg = c.yellow900, bg = c.yellow500 },
-    ["@text.danger"] = { fg = c.red900, bg = c.red500 },
+    ["@text.danger"] = { fg = c.blue900, bg = c.red500 },
 
     ["@text.diff.add"] = { link = "DiffAdd" },
     ["@text.diff.delete"] = { link = "DiffDelete" },
@@ -258,7 +258,7 @@ function M.setup()
     -- tsx
     ["@tag.tsx"] = { fg = c.green500 },
     ["@constructor.tsx"] = { fg = c.blue500 },
-    ["@tag.delimiter.tsx"] = { fg = c.orange500 },
+    ["@tag.delimiter.tsx"] = { fg = c.blue500 },
 
     -- LSP Semantic Token Groups
     ["@lsp.type.boolean"] = { link = "@boolean" },
@@ -296,7 +296,7 @@ function M.setup()
     -- ["@lsp.typemod.variable.globalScope"] (global variables)
 
     -- ts-rainbow
-    rainbowcol1 = { fg = c.red500 },
+    rainbowcol1 = { fg = c.blue700 },
     rainbowcol2 = { fg = c.orange500 },
     rainbowcol3 = { fg = c.yellow500 },
     rainbowcol4 = { fg = c.green500 },
@@ -305,7 +305,7 @@ function M.setup()
     rainbowcol7 = { fg = c.magenta500 },
 
     -- ts-rainbow2 (maintained fork)
-    TSRainbowRed = { fg = c.red },
+    TSRainbowRed = { fg = c.blue },
     TSRainbowOrange = { fg = c.orange },
     TSRainbowYellow = { fg = c.yellow },
     TSRainbowGreen = { fg = c.green },
