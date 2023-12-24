@@ -250,7 +250,7 @@ M.defaults = {
     link = "Delimiter",
   },
   ["@punctuation.special"] = {
-    default = true,
+    default = false,
     link = "Delimiter",
   },
   ["@repeat"] = {
