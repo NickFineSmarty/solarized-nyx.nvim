@@ -120,7 +120,7 @@ function M.setup()
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type = { fg = c.yellow500 }, -- (preferred) int, long, char, etc.
+    Type = { fg = c.blue700 }, -- (preferred) int, long, char, etc.
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Structure     = { }, --  struct, union, enum, etc.
     -- Typedef       = { }, --  A typedef
@@ -298,7 +298,7 @@ function M.setup()
     -- ts-rainbow
     rainbowcol1 = { fg = c.blue700 },
     rainbowcol2 = { fg = c.orange500 },
-    rainbowcol3 = { fg = c.yellow500 },
+    rainbowcol3 = { fg = c.blue500 },
     rainbowcol4 = { fg = c.green500 },
     rainbowcol5 = { fg = c.cyan500 },
     rainbowcol6 = { fg = c.blue500 },
@@ -307,7 +307,7 @@ function M.setup()
     -- ts-rainbow2 (maintained fork)
     TSRainbowRed = { fg = c.blue },
     TSRainbowOrange = { fg = c.orange },
-    TSRainbowYellow = { fg = c.yellow },
+    TSRainbowYellow = { fg = c.blue },
     TSRainbowGreen = { fg = c.green },
     TSRainbowBlue = { fg = c.blue },
     TSRainbowViolet = { fg = c.violet500 },
@@ -316,7 +316,7 @@ function M.setup()
     -- rainbow-delimiters
     RainbowDelimiterRed = { fg = c.red },
     RainbowDelimiterOrange = { fg = c.orange },
-    RainbowDelimiterYellow = { fg = c.yellow },
+    RainbowDelimiterYellow = { fg = c.blue },
     RainbowDelimiterGreen = { fg = c.green },
     RainbowDelimiterBlue = { fg = c.blue },
     RainbowDelimiterViolet = { fg = c.violet },
