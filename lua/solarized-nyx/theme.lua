@@ -124,12 +124,12 @@ function M.setup()
     -- Structure     = { }, --  struct, union, enum, etc.
     -- Typedef       = { }, --  A typedef
 
-    Special = { fg = c.orange500 }, -- (preferred) any special symbol
+    Special = { fg = c.blue700 }, -- (preferred) any special symbol
     -- SpecialChar   = { }, --  special character in a constant
     -- Tag           = { }, --    you can use CTRL-] on this
     -- Delimiter     = { }, --  character that needs attention
     -- SpecialComment= { }, -- special things inside a comment
-    Debug = { fg = c.orange500 }, --    debugging statements
+    Debug = { fg = c.blue700 }, --    debugging statements
 
     Underlined = { underline = true }, -- (preferred) text that stands out, HTML links
     Bold = { bold = true },
@@ -237,7 +237,7 @@ function M.setup()
 
     --- Identifiers
     ["@variable"] = { fg = c.base0, style = options.styles.variables }, -- Any variable name that does not have another highlight.
-    ["@variable.builtin"] = { fg = c.orange500 }, -- Variable names that are defined by the languages, like `this` or `self`.
+    ["@variable.builtin"] = { fg = c.blue700 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     --- Text
     ["@text.literal.markdown"] = { fg = c.red500 },
